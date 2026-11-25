@@ -1,0 +1,29 @@
+# Python & Notebooks cache
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+env/
+venv/
+
+# System & IDE
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Archives & Temporary files
+*.zip
+*.tar.gz
+*.rar
+*.log
+
+# LaTeX intermediate build files
+*.aux
+*.out
+*.toc
+*.lof
+*.lot
+*.synctex.gz
+*.fls
+*.fdb_latexmk

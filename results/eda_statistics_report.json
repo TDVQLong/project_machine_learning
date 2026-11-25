@@ -1,0 +1,252 @@
+{
+  "dataset": {
+    "num_drugs": 548,
+    "total_possible_pairs": 149878,
+    "positive_ddi_pairs": 48584,
+    "unobserved_ddi_pairs": 101294,
+    "interaction_density_pct": 32.42
+  },
+  "degree_statistics": {
+    "mean": 177.31,
+    "std": 129.64,
+    "median": 154.0,
+    "min": 1,
+    "max": 513,
+    "q25": 64.75,
+    "q75": 268.0
+  },
+  "missing_values": {
+    "Internal_ID": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "DrugBank_ID": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "Chem": {
+      "missing_count": 3,
+      "missing_pct": 0.55
+    },
+    "Enzyme": {
+      "missing_count": 113,
+      "missing_pct": 20.62
+    },
+    "Indication": {
+      "missing_count": 5,
+      "missing_pct": 0.91
+    },
+    "Offside_effect": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "Pathway": {
+      "missing_count": 349,
+      "missing_pct": 63.69
+    },
+    "Side_effect": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "Target": {
+      "missing_count": 7,
+      "missing_pct": 1.28
+    },
+    "Transporter": {
+      "missing_count": 217,
+      "missing_pct": 39.6
+    },
+    "ATC_Code": {
+      "missing_count": 6,
+      "missing_pct": 1.09
+    },
+    "MeSH_Code": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    }
+  },
+  "feature_vs_label_diff": {
+    "ATC": {
+      "mean_pos": 0.0002,
+      "mean_neg": 0.0,
+      "diff": 0.0002,
+      "ratio": 4.17
+    },
+    "Chem": {
+      "mean_pos": 0.1097,
+      "mean_neg": 0.1028,
+      "diff": 0.0068,
+      "ratio": 1.07
+    },
+    "Enzyme": {
+      "mean_pos": 0.1249,
+      "mean_neg": 0.1241,
+      "diff": 0.0008,
+      "ratio": 1.01
+    },
+    "Indication": {
+      "mean_pos": 0.0333,
+      "mean_neg": 0.0191,
+      "diff": 0.0142,
+      "ratio": 1.74
+    },
+    "MeSH": {
+      "mean_pos": 0.0002,
+      "mean_neg": 0.0001,
+      "diff": 0.0001,
+      "ratio": 1.85
+    },
+    "Offside": {
+      "mean_pos": 0.3348,
+      "mean_neg": 0.2444,
+      "diff": 0.0904,
+      "ratio": 1.37
+    },
+    "Pathway": {
+      "mean_pos": 0.2914,
+      "mean_neg": 0.4598,
+      "diff": -0.1684,
+      "ratio": 0.63
+    },
+    "Side_Effect": {
+      "mean_pos": 0.2397,
+      "mean_neg": 0.2374,
+      "diff": 0.0024,
+      "ratio": 1.01
+    },
+    "Target": {
+      "mean_pos": 0.0137,
+      "mean_neg": 0.0072,
+      "diff": 0.0065,
+      "ratio": 1.89
+    },
+    "Transporter": {
+      "mean_pos": 0.1569,
+      "mean_neg": 0.2341,
+      "diff": -0.0772,
+      "ratio": 0.67
+    }
+  },
+  "correlation_matrix": {
+    "ATC": {
+      "ATC": 1.0,
+      "Chem": -0.009,
+      "Enzyme": 0.003,
+      "Indication": -0.005,
+      "MeSH": -0.0,
+      "Offside": 0.042,
+      "Pathway": -0.004,
+      "Side_Effect": 0.004,
+      "Target": -0.001,
+      "Transporter": 0.002
+    },
+    "Chem": {
+      "ATC": -0.009,
+      "Chem": 1.0,
+      "Enzyme": 0.081,
+      "Indication": 0.182,
+      "MeSH": 0.073,
+      "Offside": 0.076,
+      "Pathway": -0.042,
+      "Side_Effect": 0.134,
+      "Target": 0.283,
+      "Transporter": -0.026
+    },
+    "Enzyme": {
+      "ATC": 0.003,
+      "Chem": 0.081,
+      "Enzyme": 1.0,
+      "Indication": 0.035,
+      "MeSH": 0.011,
+      "Offside": 0.016,
+      "Pathway": 0.005,
+      "Side_Effect": 0.023,
+      "Target": 0.055,
+      "Transporter": 0.062
+    },
+    "Indication": {
+      "ATC": -0.005,
+      "Chem": 0.182,
+      "Enzyme": 0.035,
+      "Indication": 1.0,
+      "MeSH": 0.037,
+      "Offside": 0.097,
+      "Pathway": -0.019,
+      "Side_Effect": 0.05,
+      "Target": 0.275,
+      "Transporter": -0.002
+    },
+    "MeSH": {
+      "ATC": -0.0,
+      "Chem": 0.073,
+      "Enzyme": 0.011,
+      "Indication": 0.037,
+      "MeSH": 1.0,
+      "Offside": 0.0,
+      "Pathway": 0.005,
+      "Side_Effect": 0.011,
+      "Target": 0.063,
+      "Transporter": 0.007
+    },
+    "Offside": {
+      "ATC": 0.042,
+      "Chem": 0.076,
+      "Enzyme": 0.016,
+      "Indication": 0.097,
+      "MeSH": 0.0,
+      "Offside": 1.0,
+      "Pathway": -0.054,
+      "Side_Effect": -0.028,
+      "Target": 0.039,
+      "Transporter": -0.015
+    },
+    "Pathway": {
+      "ATC": -0.004,
+      "Chem": -0.042,
+      "Enzyme": 0.005,
+      "Indication": -0.019,
+      "MeSH": 0.005,
+      "Offside": -0.054,
+      "Pathway": 1.0,
+      "Side_Effect": 0.012,
+      "Target": 0.027,
+      "Transporter": 0.142
+    },
+    "Side_Effect": {
+      "ATC": 0.004,
+      "Chem": 0.134,
+      "Enzyme": 0.023,
+      "Indication": 0.05,
+      "MeSH": 0.011,
+      "Offside": -0.028,
+      "Pathway": 0.012,
+      "Side_Effect": 1.0,
+      "Target": 0.023,
+      "Transporter": -0.032
+    },
+    "Target": {
+      "ATC": -0.001,
+      "Chem": 0.283,
+      "Enzyme": 0.055,
+      "Indication": 0.275,
+      "MeSH": 0.063,
+      "Offside": 0.039,
+      "Pathway": 0.027,
+      "Side_Effect": 0.023,
+      "Target": 1.0,
+      "Transporter": 0.039
+    },
+    "Transporter": {
+      "ATC": 0.002,
+      "Chem": -0.026,
+      "Enzyme": 0.062,
+      "Indication": -0.002,
+      "MeSH": 0.007,
+      "Offside": -0.015,
+      "Pathway": 0.142,
+      "Side_Effect": -0.032,
+      "Target": 0.039,
+      "Transporter": 1.0
+    }
+  }
+}
